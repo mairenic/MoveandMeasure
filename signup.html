@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Move and Measure for personalized fitness plans and tracking.">
+    <title>Sign Up - Move and Measure</title>
+    <link rel="stylesheet" href="dstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Move and Measure - Sign Up</h1>
+        <nav>
+            <a href="fitness.html">Home</a>
+            <a href="fdashboard.html">Dashboard</a>
+            <a href="fworkoutplan.html">Workout Plans</a>
+            <a href="fcontact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Create Your Account</h2>
+        <form id="signUpForm" onsubmit="return validateForm()">
+            <section>
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </section>
+            <section>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </section>
+            <section>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </section>
+            <section>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </section>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p id="signUpMessage" style="color: #6bd68b; font-style: italic; display: none;">Account created successfully! Welcome to Move and Measure!</p>
+    </main>
+
+    <script src="sscript.js"></script>
+</body>
+</html>

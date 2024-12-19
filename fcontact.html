@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Move and Measure - Your Fitness and Wellness Partner">
+    <title>Move and Measure - Contact Us </title>
+           <link rel="stylesheet" href="fstyle.css">
+</head>
+<body>
+    <header>
+        <h1> Move and Measure - Contact Us</h1>
+        <nav>
+            <a href="fitness.html">Home</a>
+            <a href="fdashboard.html">Dashboard</a>
+            <a href="fworkoutplan.html">Workout Plans</a>
+            <a href="fcontact.html"> Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>We’d love to hear from you!</h2>
+        <p>Have questions or feedback? Fill out the form below, and we’ll get back to you as soon as possible.</p>
+        <form id="contactForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+            <label for="subscription">Subscribe to updates:</label>
+            <input type="checkbox" id="subscription" name="subscription">
+            <span>Yes, send me updates about Move and Measure!</span>
+
+            <button type="submit">Send Message</button>
+            <p><strong>Email:</strong> <a href="mailto:info@moveandmeasure.com" style="color: #000000;">info@moveandmeasure.com</a></p>
+            
+        </form>
+        <p id="formResult" style="color: #000000 ; font-weight: bold;"></p>
+                <a href="fitness.html">Back to Home</a> 
+    </footer>
+    </main>
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        const formResult = document.getElementById('formResult');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                formResult.textContent = 'Thank you for contacting us, ' + name + '! We’ll be in touch soon.';
+                contactForm.reset();
+            } else {
+                formResult.textContent = 'Please fill out all fields.';
+                formResult.style.color =  #ff0000;
+            }
+        });
+    </script>
+</body>
+</html>

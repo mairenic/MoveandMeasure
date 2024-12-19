@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your fitness activity and progress with Move and Measure">
+    <title>Dashboard - Move and Measure</title>
+    <link rel="stylesheet" href="dstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Move and Measure - Dashboard</h1>
+        <nav>
+            <a href="fitness.html">Home</a>
+            <a href="fdashboard.html">Dashboard</a>
+            <a href="fworkoutplan.html">Workout Plans</a>
+            <a href="fcontact.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="trackerSection">
+            <h2>Workout Tracker</h2>
+            <p>Enter how many workouts you've done this week:</p>
+            <input type="number" id="workoutsCompleted" min="0" placeholder="Number of workouts">
+            <button onclick="trackWorkouts()">Update Workouts</button>
+            <p id="workoutResult"></p>
+        </section>   
+        
+            <h2>Track Your Fitness Progress</h2>
+        <form id="trackerForm">
+            <label for="exerciseType">Exercise:</label>
+            <select id="exerciseType">
+                <option value="running">Running</option>
+                <option value="cycling">Cycling</option>
+                <option value="yoga">Yoga</option>
+            </select>
+            <label for="exerciseDuration">Duration (minutes):</label>
+            <input type="number" id="exerciseDuration" min="0" required>
+            <button type="submit">Calculate Calories</button>
+        </form>
+        <p id="caloriesResult"></p>    
+
+        <section id="quoteSection">
+            <h2>Motivational Quote</h2>
+            <button onclick="generateQuote()">Get a Motivational Quote</button>
+            <p id="quoteText"></p>
+        </section>
+
+          </main>
+
+    <script src="dscript.js"></script>
+</body>
+</html>

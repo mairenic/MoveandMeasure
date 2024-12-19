@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore workout plans to meet your fitness goals on Move and Measure">
+    <title>Workout Plans - Move and Measure</title>
+    <link rel="stylesheet" href="wstyle.css">
+</head>
+<body>
+    <header>
+        <h1> Move and Measure - Workout Plans</h1>
+        <nav>
+            <a href="fitness.html">Home</a>
+            <a href="fdashboard.html">Dashboard</a>
+            <a href="fworkoutplan.html">Workout Plans</a>
+            <a href="fcontact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Find Your Perfect Workout Plan</h2>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search workouts by name...">
+            <select id="difficultyFilter">
+                <option value="all">All Difficulties</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+        <div id="workoutList">
+           <div class="workout-card" data-difficulty="beginner">
+    <h3>Full-Body Stretch</h3>
+    <p>Duration: 20 minutes</p>
+    <p>Difficulty: Beginner</p>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/y87vSUoIMGU" 
+            title="Full-Body Stretch Workout" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+            </div>
+            </div> 
+            
+            <div class="workout-card" data-difficulty="intermediate">
+    <h3>Strength Training</h3>
+    <p>Duration: 45 minutes</p>
+    <p>Difficulty: Intermediate</p>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/32VxFxXk_H0" 
+            title="Strength Training Workout" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    </div> 
+           <div class="workout-card" data-difficulty="advanced">
+    <h3>HIIT Workout</h3>
+    <p>Duration: 30 minutes</p>
+    <p>Difficulty: Advanced</p>
+    <iframe 
+        src="https://www.youtube.com/embed/uearF2Iorng" 
+        title="HIIT Workout" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+ </div>
+ </div> 
+ 
+ <div class="workout-card" data-difficulty="beginner">
+  <h3>Yoga Flow</h3>
+  <p>Duration: 25 minutes</p>
+  <p>Difficulty: Beginner</p>
+    <iframe 
+        src="https://www.youtube.com/embed/Eml2xnoLpYE" 
+        title="Yoga Flow" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+</div> 
+    </main>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="wscript.js"></script>
+</body>
+</html>
